@@ -31,9 +31,8 @@
     const seats = document.querySelector(".seats");
     const icon = document.querySelectorAll(".icons")
     
-    // gsap.to(plane, { scaleX: 18, scaleY : 18, duration: 1, x : -60}, 2);
-    
-    
+    gsap.to(plane, { scaleX: 18, scaleY : 18, duration: 1, x : -60}, 2);
+    gsap.to(seats, { opacity : 1, ease : "power2.inOut", duration : 1}, 2)
 
     // gsap.to(plane, { scaleX: 1, scaleY : 1, duration: 1, x : -60}, 2);
     // gsap.to(seats, { scaleX: 1, scaleY : 1, duration: 1}, 2)

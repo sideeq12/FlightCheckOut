@@ -31,11 +31,16 @@
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
+    /* display: none; */
 }
 .phone .seats{
+    position: relative;
     width: 300px;
-    height: 400px;
-    z-index: 1;
+    height: 300px;
+    margin-top: -400px;
+    border: 1px solid red;
+    background: red;
+    opacity: 0;
 }
 .phone .seats div {
     /* max-width: 100px;
