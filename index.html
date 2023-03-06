@@ -153,6 +153,13 @@
                 </div>
                 <button class="Pay">PAY NOW</button>
             </div>
+            <div class="bigCircle">
+                <div class="average">
+                    <div class="dp">
+                        
+                    </div>
+                </div>
+            </div>
             
         </div>
     </section>
@@ -172,7 +179,8 @@
     const first = document.querySelector(".first")
     const SeatA = document.querySelector(".seatA");
     const check1 = document.querySelector(".checkout");
-    const fly = document.querySelector(".Pay")
+    const fly = document.querySelector(".Pay");
+    const myPhone = document.querySelector(".phone")
     
     
     gsap.to(plane, { scaleX: 18, scaleY : 18, duration: 1, x : -60}, 2);
@@ -192,8 +200,9 @@
     })
     fly.addEventListener("click", ()=>{
         gsap.to(check1, { opacity :0, duration : 0.5, y : 100, ease : "power2.inOut" , duration : 0.4})
-        gsap.to(plane, { scaleX: 0.8, scaleY : 0.8, duration: 0.5, x : 0, delay : 1});
+        gsap.to(plane, { scaleX: 0.3, scaleY : 0.3, duration: 0.5, x : 0, delay : 1});
         gsap.to(plane, {   y : -400, duration : 1, delay : 1.5});
+        gsap.to(myPhone, {   background:"#191825" , duration : 0.5, delay : 1.6, ease : "power2.inOut"});
         
     })
 
