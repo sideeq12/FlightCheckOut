@@ -14,11 +14,13 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    /* background-color: black; */
+    /* background-image: url("https://i.pinimg.com/564x/a2/7c/84/a27c8406a12df39958926c573359a654.jpg"); */
+    background-image: url("https://i.pinimg.com/236x/ac/8a/d5/ac8ad544c2d97461a874700d6f5838ed.jpg");
+    background-size: cover;
+    object-fit: cover;
+    background-position: center;
 }
 .phoneCase{
-    /* height: 560px; */
-    /* width: 300px; */
     padding: 40px 15px 60px 15px;
     background-color: black;
     border-radius: 30px;
