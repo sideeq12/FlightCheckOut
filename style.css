@@ -542,6 +542,8 @@
         /* display: none; */
     }
     .cover .phone .verify{
+        width: 230px;
         margin-left: -40px;
+        font-size: smaller;
     }
 }
