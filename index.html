@@ -171,6 +171,8 @@
     const iconlist = document.querySelector(".log");
     const first = document.querySelector(".first")
     const SeatA = document.querySelector(".seatA");
+    const check1 = document.querySelector(".checkout");
+    const fly = document.querySelector(".Pay")
     
     
     gsap.to(plane, { scaleX: 18, scaleY : 18, duration: 1, x : -60}, 2);
@@ -185,8 +187,13 @@
 
         gsap.to(verify, { opacity : 0,y : -50, duration : 0.5, ease : "power2.inOut", delay : 3})
         gsap.to(seats, { opacity : 0, scaleX: 0, scaleY : 0,  ease : "power2.inOut", duration : 1, delay : 3.5});
-        // gsap.to(plane, { scaleX: 0.8, scaleY : 0.8, duration: 1, x : 0, delay : 3.6});
-        // gsap.to(plane, {   y : -400, duration : 1, delay : 4.6});
+       
+        gsap.to(check1, { opacity : 1, duration : 0.5, y : 0, ease : "power2.inOut" , duration : 1, delay : 3.5})
+    })
+    fly.addEventListener("click", ()=>{
+        gsap.to(check1, { opacity :0, duration : 0.5, y : 100, ease : "power2.inOut" , duration : 0.4})
+        gsap.to(plane, { scaleX: 0.8, scaleY : 0.8, duration: 0.5, x : 0, delay : 1});
+        gsap.to(plane, {   y : -400, duration : 1, delay : 1.5});
         
     })
 

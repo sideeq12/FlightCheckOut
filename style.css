@@ -40,6 +40,7 @@
     width: 300px;
     height: 250px;
     margin-top: -400px;
+    z-index: 4;
     /* border: 1px solid red; */
     /* background: linear-gradient(0.25turn, #a8b3b8, #ebf8e1, #f1f1f1); */
     padding: 10px;
@@ -85,7 +86,7 @@
     margin-top: -200px;
     background-color: #191825;
     margin-left: -60px;
-    z-index: 10;
+    z-index: 6;
     -webkit-box-shadow : 0px 57px 72px -30px rgba(81, 108, 95, 0.46);
     box-shadow : 0px 57px 72px -30px rgba(81, 108, 95, 0.46);
     opacity: 0;
@@ -150,19 +151,23 @@
     width: 280px;
     height: 450px;
     margin-left: 10px;
-    border: 1px solid red;
-    z-index: 15;
+    z-index: 2;
     margin-top: -400px;
     background-color: #fff;
+    opacity: 0;
+    transform: translateY(300px);
+    border-radius: 10px;
 }
 .cover .phone .checkout .head{
     width: 90%;
     padding: 20px 15px;
     background: rgba(252, 252, 252, 0.171);
-    color: rgba(0, 0, 0, 0.534);
+    color: white;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
     font-family: Roboto;
     font-weight: bold;
-    border: 1px solid black;
+    background: linear-gradient(135deg, orange 60%, cyan);
 }
 .cover .phone .checkout .flight{
     display: flex;
@@ -281,8 +286,12 @@
     padding: 10px 40px;
     color: white;
     width: 250px;
-    background: linear-gradient(135deg, orange 60%, cyan);
+    background: linear-gradient(135deg, #3F497F 60%, cyan);
+    border-radius: 5px;
     border: none;
+}
+.cover .phone .checkout button:hover{
+    cursor: pointer;
 }
 
 
