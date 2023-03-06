@@ -37,6 +37,15 @@
     margin-top: 15px;
     margin-left: 120px;
 }
+.phoneCase .hori{
+    position: absolute;
+    top: 35px;
+    margin-left: 95px;
+    height: 5px;
+    width: 80px;
+    background-color: #fff;
+    border-radius: 10px;
+}
 .phone{
     color: white;
     background: linear-gradient( #d2d2db, #3F497F);
