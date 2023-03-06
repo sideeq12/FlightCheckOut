@@ -153,6 +153,7 @@
     border: 1px solid red;
     z-index: 15;
     margin-top: -350px;
+    background-color: #fff;
 }
 .cover .phone .checkout .head{
     width: 90%;
@@ -166,16 +167,17 @@
 .cover .phone .checkout .flight{
     display: flex;
     flex-direction: row;
-    padding: 10px 20px;
+    padding: 10px 0px;
     justify-content: space-between;
     align-items: center;
     color: black;
-    background-color: #fff;
+    margin : 0px 20px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.226);
 }
 .cover .phone .checkout .flight span{
     display: flex;
     flex-direction: column;
 }
-.main{
-    transform: rotateZ('90deg');
+.cover .phone .checkout .flight label{
+    color: rgba(0, 0, 0, 0.308);
 }
