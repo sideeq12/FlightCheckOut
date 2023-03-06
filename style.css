@@ -145,3 +145,37 @@
     height: 100%;
     width: 100%;
 }
+.cover .phone .checkout{
+    position: relative;
+    width: 280px;
+    height: 400px;
+    margin-left: 10px;
+    border: 1px solid red;
+    z-index: 15;
+    margin-top: -350px;
+}
+.cover .phone .checkout .head{
+    width: 90%;
+    padding: 20px 15px;
+    background: rgba(252, 252, 252, 0.171);
+    color: rgba(0, 0, 0, 0.534);
+    font-family: Roboto;
+    font-weight: bold;
+    border: 1px solid black;
+}
+.cover .phone .checkout .flight{
+    display: flex;
+    flex-direction: row;
+    padding: 10px 20px;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    background-color: #fff;
+}
+.cover .phone .checkout .flight span{
+    display: flex;
+    flex-direction: column;
+}
+.main{
+    transform: rotateZ('90deg');
+}
