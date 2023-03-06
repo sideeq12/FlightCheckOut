@@ -383,5 +383,78 @@
 .bigCircle .average .cam1 lable{
     color : rgba(255, 255, 255, 0.473);
 }
+.phone .final{
+    position: relative;
+    width: 260px;
+    height: 400px;
+    margin-left: 20px;
+    z-index: 0;
+    margin-top: -300px;
+    opacity: 0;
+    transform: translateY(300px);
+}
+.phone .final .trans{
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.phone .final .trans .list{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.phone .final .trans .list .span{
+    font-weight: bolder;
+    font-size: xx-large;
+}
+.phone .final .trans .list label{
+    font-size: small;
+    font-weight: lighter;
+}
+.phone .final .main{
+    background-color: white;
+    color: black;
+}
+.phone .final .main .quicktime{
+    margin: 0px 20px;
+    display: flex;
+    flex-direction: row;
+    padding: 20px 0px;
+    justify-content: space-between;
+}
+.phone .final .main .quicktime .tim{
+    display: flex;
+    flex-direction: column;
+}
+.phone .final .main .quicktime .tim label{
+    font-size: x-small;
+    color: rgba(0, 0, 0, 0.336);
+}
+.phone .final .main .animage{
+    height: 80px;
+    width: 220px;
+    color: white;
+    padding: 20px;
+    font-size: small;
+    background-image: url("sky.jpg");
+    background-size: center;
+    object-fit: contain;
+    object-position: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    animation: change 60s infinite linear;
+}
+@keyframes change {
+    0%{      
+    background-image: url("sky.jpg");
+    }40%{       
+    background-image: url("cool_plane.png");
+    }80%{
+    background-image: url("last.jpg");
+    }100%{
+    background-image: url("last.jpg");
+    }
+}
 
 

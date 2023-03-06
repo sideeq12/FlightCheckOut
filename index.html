@@ -171,6 +171,40 @@
                     </div>
                 </div>
             </div>
+            <div class="final">
+                <div class="trans">
+                    <div class="list">
+                        <span>JFK</span>
+                        <label for="">New York</label>
+                    </div>
+                    <div class="span">.... </div>
+                    <div class="list">
+                        <span>VIE</span>
+                        <label for="">Vienna</label>
+                    </div>
+                </div>
+                <div class="main">
+                    <div class="quicktime">
+                        <div class="tim">
+                            <span>14:50</span>
+                            <label for="">Tomorrow</label>
+                        </div>
+                        <div class="tim">
+                            <span>21:40</span>
+                            <label for="">04 Nov 2023</label>
+                        </div>
+                    </div>
+                    <div class="animage">
+                        <div class="test">12 hours in Flight</div>
+                    </div>
+                    <div class="secla">
+                        <label for="">BG13</label>
+                        <label for="">F,E,A</label>
+                        <label for="">32</label>
+                        <label for="">4A</label>
+                    </div>
+                </div>
+            </div>
             
         </div>
     </section>
@@ -196,6 +230,7 @@
     const firstImage = document.querySelector(".cam")
     const secindImage = document.querySelector(".cam1")
     const thirdImage = document.querySelector(".cam2")
+    const finalline = document.querySelector(".final")
     
     
     gsap.to(plane, { scaleX: 18, scaleY : 18, duration: 1, x : -60}, 2);
@@ -220,9 +255,11 @@
         gsap.to(myPhone, {   background:"#191825" , duration : 0.5, delay : 1.2, ease : "power2.inOut"});
         gsap.to(circle, {  y : 0, opacity : 1, duration : 0.5, delay : 1.6, ease : "power2.inOut"});
         gsap.to(firstImage, {  opacity : 0, duration : 0.5, delay : 3, ease : "power2.inOut"});
-        gsap.to(secindImage, {  opacity : 1, duration : 0.5, delay : 4, ease : "power2.inOut"});
-        gsap.to(secindImage, {  opacity : 0, duration : 0.5, delay : 5, ease : "power2.inOut"});
-        gsap.to(thirdImage, {  opacity : 1, duration : 0.5, delay : 6, ease : "power2.inOut"});
+        gsap.to(secindImage, {  opacity : 1, duration : 0.5, delay : 3.3, ease : "power2.inOut"});
+        gsap.to(secindImage, {  opacity : 0, duration : 0.5, delay : 4, ease : "power2.inOut"});
+        gsap.to(thirdImage, {  opacity : 1, duration : 0.5, delay : 4.4, ease : "power2.inOut"});
+        gsap.to(circle, {  y : -300, opacity : 0, duration : 0.5, delay : 5, ease : "power2.inOut"});
+        gsap.to(finalline, { y: 0, opacity : 1, duration : 1, delay : 5.3, ease : "power2.inOut"});
         
     })
     firstlogo.addEventListener("click", ()=>{
