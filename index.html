@@ -9,6 +9,10 @@
 </head>
 <body>
     <section id="All Cover" class="cover">
+        <audio controls class="aud">
+            <source src="waterfall-140894.mp3" type="audio/ogg">
+            <source src="waterfall-140894.mp3" type="audio/mpeg">
+          </audio>
         <div class="phoneCase">
             <div class="phone">
                 <div class="plane">
@@ -254,12 +258,15 @@
     const secindImage = document.querySelector(".cam1")
     const thirdImage = document.querySelector(".cam2")
     const finalline = document.querySelector(".final")
+    const aux = document.querySelector(".aud");
     
     
     gsap.to(plane, { scaleX: 18, scaleY : 18, duration: 1, x : -60}, 2);
     gsap.to(seats, { opacity : 1, ease : "power2.inOut", duration : 1}, 2.5)
 
     btn.addEventListener("click", ()=>{
+        aux.play()
+        aux.volume = 0.2;
         gsap.to(verify, { opacity : 1, duration : 0.5, ease : "power2.inOut" })
         gsap.from(first, { opacity : 0, y : -50, duration: 0.5, ease : "power2.inOut", delay : 0.3})
         gsap.from(SeatA, { opacity : 0, y : -50, duration: 0.5, ease : "power2.inOut", delay : 0.6})
@@ -285,10 +292,9 @@
         gsap.to(finalline, { y: 0, opacity : 1, duration : 1, delay : 5.3, ease : "power2.inOut"});
         gsap.to(myPhone, { background : "url('plane1.jpg')", duration : 0.5, delay : 5.3, ease : "power2.inOut"})
         
+        
     })
-    firstlogo.addEventListener("click", ()=>{
-        console.log("it is herer")
-    })
+   
 
     // gsap.to(plane, { scaleX: 1, scaleY : 1, duration: 1, x : -60}, 2);
     // gsap.to(seats, { scaleX: 1, scaleY : 1, duration: 1}, 2)
