@@ -148,11 +148,11 @@
 .cover .phone .checkout{
     position: relative;
     width: 280px;
-    height: 400px;
+    height: 450px;
     margin-left: 10px;
     border: 1px solid red;
     z-index: 15;
-    margin-top: -350px;
+    margin-top: -400px;
     background-color: #fff;
 }
 .cover .phone .checkout .head{
@@ -204,7 +204,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-end;
-    padding: 10px 0px;
+    padding-bottom: 10px;
     border-bottom: 2px solid rgba(0, 0, 0, 0.342);
 }
 .cover .phone .checkout .ant .name span{
@@ -229,4 +229,61 @@
     width: 80px;
     font-size: small;
 }
+.cover .phone .checkout .bag{
+    color: black;
+    margin: 0px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.199);
+    padding: 25px 0px 10px 0px;
+    margin-bottom: 20px;
+
+}
+.cover .phone .checkout .bag span{
+    font-weight: bold;
+    word-spacing: -3px;
+    font-size: small;
+}
+.cover .phone .checkout .bag label{
+    color: rgba(0, 0, 0, 0.425);
+}
+.cover .phone .checkout .bag  svg{
+    height: 20px;
+    width: 20px;
+}
+.cover .phone .checkout .total{
+    color: black;
+    margin: 0px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 5px;
+}
+.cover .phone .checkout .total .line{
+    width: 40%;
+    height: 10px;
+    border-bottom: 1px solid red;
+}
+.cover .phone .checkout .total label{
+    font-size: small;
+    color: rgba(0, 0, 0, 0.356);
+}
+.cover .phone .checkout .total.p,.cover .phone .checkout .total.p label{
+    color: black;
+    font-weight: bold;
+    font-size: medium;
+}
+.cover .phone .checkout button{
+    margin: 20px ;
+    padding: 10px 40px;
+    color: white;
+    width: 250px;
+    background: linear-gradient(135deg, orange 60%, cyan);
+    border: none;
+}
+
+
 
