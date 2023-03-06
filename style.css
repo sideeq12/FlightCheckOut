@@ -537,3 +537,11 @@
 }
 
 
+@media (max-width: 920px) {
+    .phoneCase .hori{
+        /* display: none; */
+    }
+    .cover .phone .verify{
+        margin-left: -40px;
+    }
+}
