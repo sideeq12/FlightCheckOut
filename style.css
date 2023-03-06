@@ -181,3 +181,52 @@
 .cover .phone .checkout .flight label{
     color: rgba(0, 0, 0, 0.308);
 }
+.cover .phone .checkout .time{
+    color: black;
+    margin: 0px 20px;
+    padding : 10px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: small;
+}
+.cover .phone .checkout .time span{
+    font-weight: bold;
+    font-family: Roboto;
+}
+.cover .phone .checkout .time label{
+    color: rgba(0, 0, 0, 0.514);
+}
+.cover .phone .checkout .ant{
+    color: black;
+    margin: 0px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 10px 0px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.342);
+}
+.cover .phone .checkout .ant .name span{
+    font-weight: bold;
+}
+.cover .phone .checkout .ant label{
+    color : rgba(0, 0, 0, 0.301);
+}
+.cover .phone .checkout .ant .level{
+    text-align: right;
+    color : rgba(0, 0, 0, 0.301);
+}
+.cover .phone .checkout .ant .level .join{
+    font-size: xx-large;
+}
+.cover .phone .checkout .ant .level .join span{
+    font-weight: bold;
+    color: black;
+}
+.cover .phone .checkout .ant .level .la{
+    width: fit-content;
+    width: 80px;
+    font-size: small;
+}
+
