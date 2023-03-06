@@ -162,9 +162,12 @@
                                 </svg>                                
                         </div>
                         <div class="cam1">
-                            <span>VISA</span>
-                            <label for="">Pay</label>
+                           <span>VISA</span>
+                           <label for="">Pay</label>
                         </div>
+                        <div class="cam2">
+                         </div>
+                        
                     </div>
                 </div>
             </div>
@@ -189,8 +192,10 @@
     const check1 = document.querySelector(".checkout");
     const fly = document.querySelector(".Pay");
     const myPhone = document.querySelector(".phone");
-    const circle = document.querySelector(".bigCircle")
-    const firstlogo = document.querySelector(".dp")
+    const circle = document.querySelector(".bigCircle");
+    const firstImage = document.querySelector(".cam")
+    const secindImage = document.querySelector(".cam1")
+    const thirdImage = document.querySelector(".cam2")
     
     
     gsap.to(plane, { scaleX: 18, scaleY : 18, duration: 1, x : -60}, 2);
@@ -214,6 +219,10 @@
         gsap.to(plane, {   y : -400, duration : 1, delay : 1.5});
         gsap.to(myPhone, {   background:"#191825" , duration : 0.5, delay : 1.2, ease : "power2.inOut"});
         gsap.to(circle, {  y : 0, opacity : 1, duration : 0.5, delay : 1.6, ease : "power2.inOut"});
+        gsap.to(firstImage, {  opacity : 0, duration : 0.5, delay : 3, ease : "power2.inOut"});
+        gsap.to(secindImage, {  opacity : 1, duration : 0.5, delay : 4, ease : "power2.inOut"});
+        gsap.to(secindImage, {  opacity : 0, duration : 0.5, delay : 5, ease : "power2.inOut"});
+        gsap.to(thirdImage, {  opacity : 1, duration : 0.5, delay : 6, ease : "power2.inOut"});
         
     })
     firstlogo.addEventListener("click", ()=>{
