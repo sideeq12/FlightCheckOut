@@ -545,5 +545,7 @@
         width: 230px;
         margin-left: -40px;
         font-size: smaller;
+        padding: 10px;
+        border: 10px;
     }
 }
