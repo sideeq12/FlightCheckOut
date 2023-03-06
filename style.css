@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;900&display=swap');
+
 *, html,body{
     margin: 0;
     padding: 0;
@@ -36,14 +38,110 @@
 .phone .seats{
     position: relative;
     width: 300px;
-    height: 300px;
+    height: 250px;
     margin-top: -400px;
-    border: 1px solid red;
-    background: red;
+    /* border: 1px solid red; */
+    /* background: linear-gradient(0.25turn, #a8b3b8, #ebf8e1, #f1f1f1); */
+    padding: 10px;
     opacity: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    overflow: hidden;
 }
 .phone .seats div {
-    /* max-width: 100px;
-    max-height: 100px;
-    background: blue; */
+    border: 2px solid #3F497F;
+    padding: 3px;
+    height: 30px;
+    border-radius: 5px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.phone .seats div img{
+    height: 25px;
+    width: 25px;
+}
+.phone .seats div.icons.fly{
+    animation : flow 1s ease-in infinite;
+}
+@keyframes flow {
+    0%{
+    border: 2px solid #3F497F;
+    }40%{
+        border: 2px solid orangered;
+    }100%{
+        border: 2px solid #3F497F;
+    }
+}
+.cover .phone .verify{
+    position: absolute;
+    width: 250px;
+    height: 100px;
+    margin-top: -200px;
+    background-color: #191825;
+    margin-left: -60px;
+    z-index: 10;
+    -webkit-box-shadow : 0px 57px 72px -30px rgba(81, 108, 95, 0.46);
+    box-shadow : 0px 57px 72px -30px rgba(81, 108, 95, 0.46);
+    opacity: 0;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 20px;
+    border-radius: 20px;
+}
+.cover .phone .verify .image{
+    height: 50px;
+    width: 50px;
+    background-size: cover;
+    background-position: center;
+    object-fit: contain;
+    border: 3px solid green;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    /* margin-right: 20px; */
+}
+.cover .phone .verify .info{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    /* margin-left: 20px; */
+    
+    font-family: Roboto;
+}
+.cover .phone .verify .info label{
+    color: rgba(255, 255, 255, 0.425);
+}
+.cover .phone .verify .info .span{
+    text-transform: uppercase;
+    font-size: xx-large;
+}
+.cover .phone .verify .info .log{
+    height: 30px;
+}
+.cover .phone .verify .info .log img{
+    height: 100%;
+    margin-right: 5px;
+}
+
+.cover .phone .verify .oba{
+    position: absolute;
+    margin-bottom: -40px;
+    margin-left: 120px;
+    height: 30px;
+    width: 50px;
+}
+
+.cover .phone .verify .oba img{
+    height: 100%;
+    width: 100%;
 }

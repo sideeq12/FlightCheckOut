@@ -14,11 +14,86 @@
             </div>
             <div class="seats">
                 <div class="icons">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-airplane" viewBox="0 0 16 16">
-                        <path d="M6.428 1.151C6.708.591 7.213 0 8 0s1.292.592 1.572 1.151C9.861 1.73 10 2.431 10 3v3.691l5.17 2.585a1.5 1.5 0 0 1 .83 1.342V12a.5.5 0 0 1-.582.493l-5.507-.918-.375 2.253 1.318 1.318A.5.5 0 0 1 10.5 16h-5a.5.5 0 0 1-.354-.854l1.319-1.318-.376-2.253-5.507.918A.5.5 0 0 1 0 12v-1.382a1.5 1.5 0 0 1 .83-1.342L6 6.691V3c0-.568.14-1.271.428-1.849Zm.894.448C7.111 2.02 7 2.569 7 3v4a.5.5 0 0 1-.276.447l-5.448 2.724a.5.5 0 0 0-.276.447v.792l5.418-.903a.5.5 0 0 1 .575.41l.5 3a.5.5 0 0 1-.14.437L6.708 15h2.586l-.647-.646a.5.5 0 0 1-.14-.436l.5-3a.5.5 0 0 1 .576-.411L15 11.41v-.792a.5.5 0 0 0-.276-.447L9.276 7.447A.5.5 0 0 1 9 7V3c0-.432-.11-.979-.322-1.401C8.458 1.159 8.213 1 8 1c-.213 0-.458.158-.678.599Z"/>
-                      </svg>
+                    <img src="Ico.svg" />
+                </div>
+                <div class="icons">
+                    <img src="fra.svg" />
+                </div>
+                <div class="icons">
+                    <img src="Ico.svg" />
+                </div>
+                <div class="icons">
+                    <img src="ta.png" />
+                </div>
+                <div class="icons">
+                    <img src="Ico.svg" />
+                </div>
+                <div class="icons">
+                    <img src="la.svg" />
+                </div>
+                <div class="icons">
+                    <img src="Ico.svg" />
+                </div>
+                <div class="icons">
+                    <img src="Ico.svg" />
+                </div>
+                <div class="icons">
+                    <img src="fra.svg" />
+                </div>
+                <div class="icons">
+                    <img src="ba.svg" />
+                </div>
+                <div class="icons">
+                    <img src="Ico.svg" />
+                </div>
+                <div class="icons">
+                    <img src="jo.svg" />
+                </div>
+                <div class="icons">
+                    <img src="question.svg" />
+                </div>
+                <div class="icons">
+                    <img src="Ico.svg" />
+                </div>
+                <div class="icons">
+                    <img src="Ico.svg" />
+                </div>
+                <div class="icons">
+                    <img src="Ico.svg" />
+                </div>
+                <div class="icons fly">
+                    <img src="Ico.svg" />
+                </div>
+                <div class="icons">
+                    <img src="Ico.svg" />
+                </div>
+                <div class="icons">
+                    <img src="fra.svg" />
+                </div>
+                <div class="icons">
+                    <img src="Ico.svg" />
                 </div>
             </div>
+            <div class="verify">
+                <div class="info">
+                    <label for="" class="first">First class</label>
+                    <span class="seatA">Seat 4A</span>
+                    <div class="log">
+                       <img src="half.svg" alt="">
+                       <img src="mal.svg" alt="">
+                       <img src="Gun.svg" alt="">
+                       <img src="na.svg" alt="">
+
+                    </div>
+                </div>
+                <div class="image">
+                    <img src="ma.svg" alt="">
+                </div>
+                <div class="oba"> 
+                    <img src="onag.svg" alt="">
+                </div>
+            </div>
+            
         </div>
     </section>
 </body>
@@ -29,10 +104,31 @@
 <script>
     const plane = document.querySelector(".plane");
     const seats = document.querySelector(".seats");
-    const icon = document.querySelectorAll(".icons")
+    const icon = document.querySelectorAll(".icons");
+    const verify = document.querySelector(".verify");
+    const btn = document.querySelector(".fly")
+    const image = document.querySelector(".image")
+    const iconlist = document.querySelector(".log");
+    const first = document.querySelector(".first")
+    const SeatA = document.querySelector(".seatA");
+    
     
     gsap.to(plane, { scaleX: 18, scaleY : 18, duration: 1, x : -60}, 2);
-    gsap.to(seats, { opacity : 1, ease : "power2.inOut", duration : 1}, 2)
+    gsap.to(seats, { opacity : 1, ease : "power2.inOut", duration : 1}, 2.5)
+
+    btn.addEventListener("click", ()=>{
+        gsap.to(verify, { opacity : 1, duration : 0.5, ease : "power2.inOut" })
+        gsap.from(first, { opacity : 0, y : -50, duration: 0.5, ease : "power2.inOut", delay : 0.3})
+        gsap.from(SeatA, { opacity : 0, y : -50, duration: 0.5, ease : "power2.inOut", delay : 0.6})
+        gsap.from(iconlist, { opacity : 0, y : 50, duration: 0.5, ease : "power2.inOut", delay : 0.9})
+        gsap.from(image, { opacity : 0, x : 50, duration: 0.5, ease : "power2.inOut", delay : 1.2} )
+
+        gsap.to(verify, { opacity : 0,y : -50, duration : 0.5, ease : "power2.inOut", delay : 3})
+        gsap.to(seats, { opacity : 0, scaleX: 0, scaleY : 0,  ease : "power2.inOut", duration : 1, delay : 3.5});
+        gsap.to(plane, { scaleX: 0.8, scaleY : 0.8, duration: 1, x : 0, delay : 3.6});
+        gsap.to(plane, {   y : -400, duration : 1, delay : 4.6});
+        
+    })
 
     // gsap.to(plane, { scaleX: 1, scaleY : 1, duration: 1, x : -60}, 2);
     // gsap.to(seats, { scaleX: 1, scaleY : 1, duration: 1}, 2)
