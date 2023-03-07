@@ -251,7 +251,7 @@
 
     btn.addEventListener("click", ()=>{
         aux.play()
-        aux.volume = 0.2;
+        aux.volume = 0.1;
         gsap.to(verify, { opacity : 1, duration : 0.5, ease : "power2.inOut" })
         gsap.from(first, { opacity : 0, y : -50, duration: 0.5, ease : "power2.inOut", delay : 0.3})
         gsap.from(SeatA, { opacity : 0, y : -50, duration: 0.5, ease : "power2.inOut", delay : 0.6})
