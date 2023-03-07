@@ -121,6 +121,9 @@
         color: #fff;
     }
 }
+.pal{
+    transform: rotate(90deg);
+}
 .cover .phone .verify{
     position: absolute;
     width: 250px;
