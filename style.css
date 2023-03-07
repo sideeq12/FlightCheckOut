@@ -71,9 +71,9 @@
     width: 280px;
     height: 250px;
     margin-top: -400px;
-    margin-left: -10px;
+    margin-left: -20px;
     z-index: 4;
-    padding: 10px;
+    padding: 10px 20px;
     opacity: 0;
     display: flex;
     flex-wrap: wrap;
@@ -83,7 +83,6 @@
     overflow: hidden;
 }
 .phone .seats div {
-    /* border: 2px solid #3F497F; */
     padding: 3px;
     height: 30px;
     border-radius: 5px;
@@ -98,7 +97,7 @@
     width: 25px;
 }
 .phone .seats .myseat{
-    border: 1px solid #191825;
+    padding: 0px;
     width: 50px;
     height: 50px;
     background-color: #191825;
@@ -408,7 +407,7 @@
 .bigCircle .average .cam2{
     height: 100px;
     margin-top: -125px;
-    background-image: url("vic.svg");
+    background-image: url("mark.svg");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
