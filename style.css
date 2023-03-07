@@ -554,12 +554,12 @@
 
 @media (max-width: 920px) {
     .phoneCase .hori{
-        /* display: none; */
+        display: none;
     }
     .cover .phone .verify{
         width: 230px;
         margin-left: -40px;
-        font-size: smaller;
+        font-size: x-small;
         padding: 10px;
         border: 10px;
     }
