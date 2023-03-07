@@ -571,5 +571,6 @@
     }
     .cover .phone .verify .info .log{
         margin-top: 20px;
+        height: 20px;
     }
 }
