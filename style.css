@@ -564,8 +564,11 @@
         border: 10px;
     }
     .cover .phone .verify .image{
-        height: 50px;
-        width: 50px;
+        height: 30px;
+        width: 30px;
         border: 1px solid green;
+    }
+    .cover .phone .verify .info .log{
+        margin-bottom: 20px;
     }
 }
