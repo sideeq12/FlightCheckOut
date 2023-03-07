@@ -97,16 +97,29 @@
     height: 25px;
     width: 25px;
 }
+.phone .seats .myseat{
+    border: 1px solid #191825;
+    width: 50px;
+    height: 50px;
+    background-color: #191825;
+}
 .phone .seats div.icons.fly{
-    animation : flow 1s ease-in infinite;
+    padding: 5px;
+    font-weight: bold;
+    animation : flow 2s ease-in infinite;
+    color: #191825;
+    border: 1px solid #191825;
 }
 @keyframes flow {
     0%{
-    border: 2px solid #3F497F;
+    border: 1px solid #191825;
+    color: #191825;
     }40%{
-        border: 2px solid orangered;
+        background-color: #191825;
+        color: #fff;
     }100%{
-        border: 2px solid #3F497F;
+        border: 1px solid #191825;
+        color: #fff;
     }
 }
 .cover .phone .verify{
